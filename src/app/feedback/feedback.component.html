@@ -1,0 +1,28 @@
+<div class="body">
+  <h2 class="text-center">Feedback List</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th class="text-center">Id</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Feedbacks</th>
+        <th class="text-center" colspan="2">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let feedback of feedback; let i = index">
+        <td style="color: green;" class="text-center">{{ feedback.id }}</td>
+        <td style="color: green;" class="text-center">{{ feedback.name }}</td>
+        <td style="color: green;">{{ feedback.feedback }}</td>
+        <td class="text-center">
+          <button
+          class="btn btn-secondary"
+            (click)="deleteFeedback(feedback.id)"
+          >
+            <a href="http://localhost:4200/feedback">Delete</a>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
