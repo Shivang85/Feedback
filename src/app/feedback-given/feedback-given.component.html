@@ -3,20 +3,20 @@
     <div class="col-md-6 offset-md-4">
   
   <form #formName="ngForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label>Id</label>
         <input class="form-control" type="number" [(ngModel)]="feedback.id"  name="id" />
-    </div>
+    </div> -->
     <div class="form-group">
         <label>Name</label>
-        <input [(ngModel)]="feedback.name" type="name" class="form-control" name="name" />
+        <input [(ngModel)]="feedback.name" type="name"style="margin-top: 20px;" class="form-control" name="name" />
     </div>
     <div class="form-group">
-        <label>Feedback</label>
-        <input [(ngModel)]="feedback.feedback" class="form-control" type="name" name="feedback" />
+        <label style="margin-top: 20px;">Feedback</label>
+        <input [(ngModel)]="feedback.feedback" class="form-control" style="margin-top: 20px;" type="name" name="feedback" />
     </div>
     <div>
-        <button type="submit" class="btn btn-secondary">Submit</button>
+        <button type="submit" class="btn btn-secondary" style="margin-top: 20px;">Submit</button>
     </div>
   </form>
 </div>
